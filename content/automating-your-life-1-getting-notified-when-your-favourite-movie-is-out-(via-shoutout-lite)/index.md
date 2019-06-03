@@ -1,8 +1,8 @@
 ---
-title: "Automating Your Life #1 — Getting Notified When Your Favourite Movie is Out (via ShoutOUT Lite)"
-description: "ShoutOUT Lite was released a couple of hours ago (as of writing) and this gave me an excuse to mess around with an old project of mine I did called ‘movie-notifier’. To the uninitiated, ShoutOUT Lite…"
-date: "2016-12-23T07:15:02.522Z"
-categories: 
+title: 'Automating Your Life #1 — Getting Notified When Your Favourite Movie is Out (via ShoutOUT Lite)'
+description: 'ShoutOUT Lite was released a couple of hours ago (as of writing) and this gave me an excuse to mess around with an old project of mine I did called ‘movie-notifier’. To the uninitiated, ShoutOUT Lite…'
+date: '2016-12-23T07:15:02.522Z'
+categories:
   - Bots
   - Tutorial
   - DIY
@@ -17,21 +17,21 @@ redirect_from:
 
 _To the uninitiated,_ [_ShoutOUT Lite_](https://lite.getshoutout.com) _is ShoutOUT Lab’s SMS API for Developers, which aims to be more of a pay-as-you-go and streamlined approach to the whole SMS-sending shebang, allowing you to also easily manage sender IDs and view logs and statistics from an easy to use dashboard._
 
-Back when Deadpool was all the craze and amazing an_d you just had to watch the movie_, I really wanted to be able to get notified as soon as tickets were available so I could watch it with my best-friend. I didn’t want spend most of my time refreshing the page just to be able to, so, like any hacker/developer would do, I decided to automate the whole thing.
+Back when Deadpool was all the craze and amazing an*d you just had to watch the movie*, I really wanted to be able to get notified as soon as tickets were available so I could watch it with my best-friend. I didn’t want spend most of my time refreshing the page just to be able to, so, like any hacker/developer would do, I decided to automate the whole thing.
 
-I tend to prefer Savoy to MC when it comes to movies, just because _<retracted>_, so I snooped around the [EAP Movies](http://eapmovies.com) website, looking for ways I could extract the current movies being played. Anybody who knew me well enough would know that I absolutely loathe scraping websites and would only resort to it as a last measure, so with persistence, I found a little URL endpoint that just responded with movie names wrapped in HTML (which was used to fill that little list box you use when trying to select a movie to purchase tickets for) and that was enough for me.
+I tend to prefer Savoy to MC when it comes to movies, just because _[retracted]_, so I snooped around the [EAP Movies](http://eapmovies.com) website, looking for ways I could extract the current movies being played. Anybody who knew me well enough would know that I absolutely loathe scraping websites and would only resort to it as a last measure, so with persistence, I found a little URL endpoint that just responded with movie names wrapped in HTML (which was used to fill that little list box you use when trying to select a movie to purchase tickets for) and that was enough for me.
 
 A couple of hours after and I had finished a rather crude, but functional script that worked, which would notify us via a telegram bot and put it up on my server.
 
 [**ishan-marikar/deadpool-ticket-notifier**  
-_deadpool-ticket-notifier - Notifies you when Savoy starts selling tickets for DeadPool ^^,_github.com](https://github.com/ishan-marikar/deadpool-ticket-notifier/blob/master/index.js "https://github.com/ishan-marikar/deadpool-ticket-notifier/blob/master/index.js")[](https://github.com/ishan-marikar/deadpool-ticket-notifier/blob/master/index.js)
+\_deadpool-ticket-notifier - Notifies you when Savoy starts selling tickets for DeadPool ^^,\_github.com](https://github.com/ishan-marikar/deadpool-ticket-notifier/blob/master/index.js 'https://github.com/ishan-marikar/deadpool-ticket-notifier/blob/master/index.js')[](https://github.com/ishan-marikar/deadpool-ticket-notifier/blob/master/index.js)
 
 It worked. I bought tickets and we enjoyed the movie (although the popcorn was a tad bit overpriced if you ask me). I’d say it was well worth the effort I had put into being notified of it.
 
 As per usual, I then turned it into a module so anybody could plug it in and play with it.
 
 [**movie-notifier-lk**  
-_A simple module to notifier you when your favourite movie is being played at most Sri Lankan cinemas._www.npmjs.com](https://www.npmjs.com/package/movie-notifier-lk "https://www.npmjs.com/package/movie-notifier-lk")[](https://www.npmjs.com/package/movie-notifier-lk)
+\_A simple module to notifier you when your favourite movie is being played at most Sri Lankan cinemas.\_www.npmjs.com](https://www.npmjs.com/package/movie-notifier-lk 'https://www.npmjs.com/package/movie-notifier-lk')[](https://www.npmjs.com/package/movie-notifier-lk)
 
 It’s as easy as cake .. or pie, or cheesecake or .. well, you get the idea.
 
